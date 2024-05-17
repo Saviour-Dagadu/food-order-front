@@ -45,7 +45,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #ff6b81;
+    color: rgb(10, 119, 5);
 }
 
 .btn{
@@ -97,16 +97,11 @@ fieldset{
     color: skyblue;
 }
 .logo h2:hover{
-    color: rgb(10, 119, 5);
-    font-style: italic;
+    color: red;
+    font-size: larger;
 }
 .logo h2 span{
-    color: #ff6b81;
-    font-size: larger;
-    font-weight:bolder;
-}
-.logo h2 span:hover{
-    color: #ff4757;
+    color: red;
     font-size: larger;
     font-weight:bolder;
 }

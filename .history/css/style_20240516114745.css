@@ -105,11 +105,6 @@ fieldset{
     font-size: larger;
     font-weight:bolder;
 }
-.logo h2 span:hover{
-    color: #ff4757;
-    font-size: larger;
-    font-weight:bolder;
-}
 .menu{
     line-height: 60px;
 }

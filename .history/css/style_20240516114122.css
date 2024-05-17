@@ -97,16 +97,11 @@ fieldset{
     color: skyblue;
 }
 .logo h2:hover{
-    color: rgb(10, 119, 5);
+    color: #ff6b81;
     font-style: italic;
 }
 .logo h2 span{
-    color: #ff6b81;
-    font-size: larger;
-    font-weight:bolder;
-}
-.logo h2 span:hover{
-    color: #ff4757;
+    color: rgb(10, 119, 5);
     font-size: larger;
     font-weight:bolder;
 }
