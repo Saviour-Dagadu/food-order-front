@@ -337,7 +337,7 @@ opacity: 1;
     font: 15px 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
 }
 
-/* #message .message-bottom .btn{
+#message .message-bottom .btn{
     padding: 10px 20px;
     background-color: brown;
     text-transform: uppercase;
@@ -347,7 +347,7 @@ opacity: 1;
     font-weight: 500;
     color: #fff;
     cursor: pointer;
-} */
+}
 
 
 /* CSS for Mobile Size or Smaller Screen */

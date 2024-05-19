@@ -96,7 +96,7 @@
 			    <h3>Send us your message</h3>
 			 </div>
 			 <div class="message-bottom">
-			    <form id = "myForm" action="" method="POST">
+			    <form action="" method="POST">
 				   <div class="form-group">
 				      <label for="name">Name</label>
 					  <input type="text" id="name" name="name" class="input" placeholder="John Doe"/>
@@ -173,15 +173,12 @@
     <!-- Contact Section Ends Here -->
 
     <script>
-	    function clearInput(){
-			var form = document.getElementById("myForm"); // replace "myForm" with the ID of your form
-			var elements = form.elements;
-			for (var i = 0; i < elements.length; i++) {
-				if (elements[i].type === "text" || elements[i].type === "email" || elements[i].type === "textarea") {
-					elements[i].value = "";
-				}
-			}
-		}
+	      function clearInput(){
+		     document.getElementById("name").value = "";
+		     document.getElementById("email").value = "";
+		     document.getElementById("contact").value = "";
+			 document.getElementById("message").value.clearInput = "";
+		  }
 	  </script>
 <!-- social Section Starts Here -->
 <section class="social">
