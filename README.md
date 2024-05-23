@@ -3,9 +3,9 @@ This is a Restaurant Theme Website Template, designed using html and css.
 
 <!-- **Access the Course Here** - 
 [Responsive Web Design Course 2020](https://www.youtube.com/watch?v=VaV_Ro8jpPY) -->
-**Link to project:** https://woowfoods.netlify.app/
+**Link to project:** https://bitehubs.netlify.app/
 
-![alt tag](https://i.postimg.cc/262P3Nv3/Screenshot-128.png)
+![alt tag](https://i.postimg.cc/3J115PQ6/Screenshot-75.png)
 
 
 ## Support Developer
