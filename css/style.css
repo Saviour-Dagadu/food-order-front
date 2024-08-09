@@ -337,6 +337,54 @@ opacity: 1;
     font: 15px 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align items horizontally in the center */
+    text-decoration: none; /* Removes default underline from the link */
+    color: #333; /* Adjust text color as needed */
+}
+.navbar-brand h2 {
+    margin: 0;               /* Removes default margin */
+    font-size: 2.5rem;
+}
+
+.navbar-brand i {
+    display: block;          /* Ensures the i element is on a new line */
+    margin: 0;               /* Removes default margin */
+    font-size: 0.8rem;       /* Makes the text smaller */
+    color: skyblue;
+}
+
+.logo-img {
+    width: 3.5rem; /* Adjust size as needed */
+    height: 3.5rem; /* Adjust size as needed */
+    margin-right: 0.5rem; /* Space between image and text */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center; /* Center text vertically within container */
+}
+
+h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-right: 0.5rem; /* Space between h2 and h6 */
+}
+
+h2 span {
+    color: #007bff; /* Adjust color as needed */
+}
+
+h6 {
+    margin: 0; /* Remove default margin */
+    font-size: 0.2rem; /* Adjust font size as needed */
+    color: #555; /* Adjust text color as needed */
+}
+
+
 /* #message .message-bottom .btn{
     padding: 10px 20px;
     background-color: brown;
