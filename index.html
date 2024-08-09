@@ -2,21 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
-
-    <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        /* Ensure #slideshow covers the viewport */
+        #slideshow {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        /* Navbar section styling */
+        .navbar {
+            position: relative;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .navbar-brand h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .navbar-brand i {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Ensure other sections are positioned on top of the background */
+        .food-search {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            z-index: 10; /* Ensure it appears above the background */
+        }
+
+        .categories, .food-menu {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+            padding: 2rem;
+            z-index: 10; /* Ensure it appears above the background */
+        }
+
+        .footer, .social {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            z-index: 10; /* Ensure it appears above the background */
+        }
+        
+        .social {
+            position: relative;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 <body>
     <!-- Navbar Section Starts Here -->
     <section class="navbar">
         <div class="container">
             <div class="logo">
                 <a href="index.html" title="Logo" class="navbar-brand">
-                    <div >
+                    <div>
                         <h2>Bite<span>Hub</span></h2>
                         <i>The Food Heaven</i>
                     </div>
@@ -25,18 +98,10 @@
 
             <div class="menu text-right">
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categories.html">Categories</a>
-                    </li>
-                    <li>
-                        <a href="foods.html">Foods</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="foods.html">Foods</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul> 
             </div>
 
@@ -46,16 +111,18 @@
     <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
-    <section class="food-search text-center">
-        <div class="container">
-            
-            <form action="underConstruction.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-            </form>
-
-        </div>
-    </section>
+    <div id="slideshow" style="
+        background-image: url('./images/brooke-lark-oGCF9yywFCM-unsplash.jpg'); 
+    ">
+        <section class="food-search text-center">
+            <div class="container">
+                <form action="underConstruction.html" method="POST">
+                    <input type="search" name="search" placeholder="Search for Food.." required>
+                    <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
+    </div>
     <!-- fOOD sEARCH Section Ends Here -->
 
     <!-- CAtegories Section Starts Here -->
@@ -64,27 +131,24 @@
             <h2 class="text-center">Explore Foods</h2>
 
             <a href="category-foods.html">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Pizza</h3>
-            </div>
+                <div class="box-3 float-container">
+                    <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                    <h3 class="float-text text-white">Pizza</h3>
+                </div>
             </a>
 
             <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Burger</h3>
-            </div>
+                <div class="box-3 float-container">
+                    <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+                    <h3 class="float-text text-white">Burger</h3>
+                </div>
             </a>
 
             <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Momo</h3>
-            </div>
+                <div class="box-3 float-container">
+                    <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+                    <h3 class="float-text text-white">Momo</h3>
+                </div>
             </a>
 
             <div class="clearfix"></div>
@@ -101,15 +165,11 @@
                 <div class="food-menu-img">
                     <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                 </div>
-
                 <div class="food-menu-desc">
                     <h4>Pizza</h4>
                     <p class="food-price">Ghc 50</p>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
+                    <p class="food-detail">Made with Italian Sauce, Chicken, and organic vegetables.</p>
                     <br>
-
                     <a href="order.html" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
@@ -118,15 +178,11 @@
                 <div class="food-menu-img">
                     <img src="images/menu-burger.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                 </div>
-
                 <div class="food-menu-desc">
                     <h4>Smoky Burger</h4>
                     <p class="food-price">Ghc 20</p>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
+                    <p class="food-detail">Made with Italian Sauce, Chicken, and organic vegetables.</p>
                     <br>
-
                     <a href="order.html" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
@@ -135,62 +191,30 @@
                 <div class="food-menu-img">
                     <img src="images/menu-burger.jpg" alt="Chicke Hawain Burger" class="img-responsive img-curve">
                 </div>
-
                 <div class="food-menu-desc">
                     <h4>Nice Burger</h4>
                     <p class="food-price">Ghc 20</p>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organize vegetables.
-                    </p>
+                    <p class="food-detail">Made with Italian Sauce, Chicken, and organic vegetables.</p>
                     <br>
-
                     <a href="order.html" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
-
-        
-
-            <!-- <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Food Title</h4>
-                    <p class="food-price">$2.3</p>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div> -->
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
                     <img src="images/menu-momo.jpg" alt="Chicke Hawain Momo" class="img-responsive img-curve">
                 </div>
-
                 <div class="food-menu-desc">
                     <h4>Chicken Steam Momo</h4>
                     <p class="food-price">Ghc 50</p>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
+                    <p class="food-detail">Made with Italian Sauce, Chicken, and organic vegetables.</p>
                     <br>
-
                     <a href="order.html" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
 
-
             <div class="clearfix"></div>
-
-            
-
         </div>
-
         <p class="text-center">
             <a href="#">See All Foods</a>
         </p>
@@ -198,30 +222,46 @@
     <!-- fOOD Menu Section Ends Here -->
 
     <!-- social Section Starts Here -->
-<section class="social">
-	<div class="container text-center">
-		<ul>
-			<li>
-				<a href="https://www.facebook.com/saviou/"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/saviour_dagadu/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
-			</li>
-			<li>
-				<a href="https://twitter.com/savicode"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
-			</li>
-		</ul>
-	</div>
-</section>
-<!-- social Section Ends Here -->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li><a href="https://www.facebook.com/saviou/"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a></li>
+                <li><a href="https://www.instagram.com/saviour_dagadu/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></li>
+                <li><a href="https://twitter.com/savicode"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
 
-<!-- footer Section Starts Here -->
-<section class="footer">
-	<div class="container text-center">
-		<p>All rights reserved. Designed By <a href="https://saviourdagadu.netlify.app/">@savicode</a></p>
-	</div>
-</section>
-<!-- footer Section Ends Here -->
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="https://saviourdagadu.netlify.app/">@savicode</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+
+<script>
+    const images = [
+        './images/brooke-lark-oGCF9yywFCM-unsplash.jpg',
+        './images/brooke-lark-R18ecx07b3c-unsplash.jpg',
+        './images/eaters-collective-ddZYOtZUnBk-unsplash.jpg',
+        './images/lily-banse--YHSwy6uqvk-unsplash.jpg'
+    ];
+
+    let currentImageIndex = 0;
+
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        document.getElementById('slideshow').style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    }
+
+    // Change image every 5 seconds
+    setInterval(showNextImage, 5000);
+
+    // Initialize the first image
+    showNextImage();
+</script>
 
 </body>
 </html>
