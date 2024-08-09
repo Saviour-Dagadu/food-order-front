@@ -342,7 +342,7 @@ opacity: 1;
     align-items: center; /* Align items horizontally in the center */
     text-decoration: none; /* Removes default underline from the link */
     color: #333; /* Adjust text color as needed */
-    background-image: url('/food-order-front/images/apple.gif'); /* Replace with the path to your image */
+    background-image: url('../images/apple.gif'); /* Replace with the path to your image */
     background-size: cover;                          /* Ensures the image covers the entire div */
     background-position: center;                     /* Centers the image within the div */
     background-repeat: no-repeat;
