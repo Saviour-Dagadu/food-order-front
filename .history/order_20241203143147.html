@@ -28,7 +28,7 @@
             </div>
     
             <div class="menu text-right">
-                <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: flex-end;">
+                <ul style="list-style: none; margin: 0; padding: 0; display: flex;">
                     <li style="margin-left: 1rem;">
                         <a href="index.html">Home</a>
                     </li>
@@ -50,61 +50,54 @@
     <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
-    <section class="food-search text-center">
+    <section class="food-search">
         <div class="container">
             
-            <form action="underConstruction.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+
+            <form action="#" class="order">
+                <fieldset>
+                    <legend>Selected Food</legend>
+
+                    <div class="food-menu-img">
+                        <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Food Title</h3>
+                        <p class="food-price">Ghc2.3</p>
+
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. Sarah Adu" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g. +233xxxxxx" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. info@woowfoods.com" class="input-responsive" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                </fieldset>
+
             </form>
 
         </div>
     </section>
     <!-- fOOD sEARCH Section Ends Here -->
 
-     <!-- Contact Section Starts Here -->
-     <section class="food-menu">
-        <div class="container">
-            <h2 class="text-center">👀 This page is under construction 👋</h2>
-            <br /><br />
-			 <!-----This is to display whether admin was able to add or not---->
-			 <!-- <?php
-                    if(isset($_SESSION['contact']))
-                    {
-                        echo $_SESSION['contact'];   //Displaying session message
-                        unset($_SESSION['contact']); //Removing session message
-                    }
-        ?> -->
-        <br /><br /><br />
-
-            <section id="info">
-      <div class="container center">
-        <div class="info info-image">
-          <img src="images/logo.png" alt="Member Image"/>
-        </div>
-        <!-- <div class="info info-text">
-          <h3>Our Business Info</h3>
-          <div class="info-text-call">
-            <h4>Call Now</h4>
-            <address>+233248929076</address>
-          </div>
-        <div class="info-text-email">
-            <h4>Email us</h4>
-            <address>support@food-order.com</address>
-        </div>
-        </div> -->
-      </div>
-    </section>
-    
-
-
-            <div class="clearfix"></div>
-
-        </div>
-
-    </section>
-    <!-- Contact Section Ends Here -->
-<!-- social Section Starts Here -->
+    <!-- social Section Starts Here -->
 <section class="social">
 	<div class="container text-center">
 		<ul>
@@ -129,3 +122,6 @@
 	</div>
 </section>
 <!-- footer Section Ends Here -->
+
+</body>
+</html>
